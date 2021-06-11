@@ -19,7 +19,7 @@ public interface CartRepository extends JpaRepository<Cart,Integer> {
 	@Modifying
 	@Transactional
 	@Query(
-			  value = "DELETE FROM SpringMCart where movieId =:movieId", 
+			  value = "DELETE FROM SpringMCart c where c.movie_Id =:movieId", 
 			  nativeQuery = true)
 	public void removeByMovieMovieId( @Param("movieId") Integer movieId);
 
