@@ -28,7 +28,7 @@ public class Cart {
 @SequenceGenerator(name = "cartseq",sequenceName = "cart_seq",initialValue=50,allocationSize = 2)
 private Integer cartId;
 private String loginId;
-@OneToOne(cascade = CascadeType.REMOVE)
+@OneToOne
 @JoinColumn(name="movieId")
 private Movie movie;
 }

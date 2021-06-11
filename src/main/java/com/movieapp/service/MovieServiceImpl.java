@@ -58,4 +58,10 @@ public class MovieServiceImpl implements MovieService {
 		return movieRepository.findByLanguage(language);
 	}
 
+	@Override
+	public void updateMovie(Movie movie) {
+		movieRepository.save(movie);
+		
+	}
+
 }

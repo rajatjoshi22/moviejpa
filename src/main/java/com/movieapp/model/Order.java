@@ -34,7 +34,7 @@ public class Order {
 	@OneToOne
 	@JoinColumn(name="user_id")
 	private User user;
-	@OneToOne(cascade = CascadeType.REMOVE)
+	@OneToOne
 	@JoinColumn(name="movie_id")
 	private Movie movie;
 	
